@@ -8,6 +8,7 @@
     ./user/packages/hyprlock/home.nix
     ./user/packages/retroarch/home.nix
     ./user/packages/fastfetch/home.nix
+     ./user/packages/nvim/home.nix
     
   ];
   nixpkgs.config.allowUnfree = true;
@@ -77,7 +78,6 @@
   programs = {
     ghostty.enable = true;
     btop.enable = true;
-    neovim.enable = true;
     rofi.enable = true;
   };
 
