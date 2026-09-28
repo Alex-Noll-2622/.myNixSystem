@@ -3,11 +3,11 @@
   programs.neovim = {
     enable = true;
 
-    extraConfig = ''
+    initLua = ''
       require('config.options')
     '';
   };
 
-  home.file.".config/nvim/lua/options.lua".source = ./lua/options.lua;
+  home.file.".config/nvim/lua".source = ./lua;
 
 }
