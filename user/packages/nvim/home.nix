@@ -4,10 +4,10 @@
     enable = true;
 
     extraConfig = ''
-      require("option")
+      require('config.options')
     '';
   };
 
-  home.file.".config/nvim/lua".source = ./lua;
+  home.file.".config/nvim/lua/options.lua".source = ./lua/options.lua;
 
 }
