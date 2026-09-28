@@ -98,7 +98,6 @@
     eza
     tree
     zoxide
-    opencode
     fzf
     xwayland-satellite
     neovim
