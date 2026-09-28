@@ -1,7 +1,13 @@
 { pkgs, config, ... }: {
 
-  programs.nvim.enable = true;
+  programs.neovim = {
+    enable = true;
 
-  home.file.".config/nvim/init.lua".source = ./init.lua;
+    extraConfig = ''
+      require("option")
+    '';
+  };
+
+  home.file.".config/nvim/lua".source = ./lua;
 
 }
